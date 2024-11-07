@@ -1,0 +1,83 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Transition</title>
+    <style>
+            body {
+           
+            padding: 100px;
+        }
+        
+        h1{
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: black;
+                    position: relative;
+                    left: 20%;
+                    top: 50%;
+                    
+                   
+                    
+                    
+                    
+            }
+           
+
+        .animated-forms { 
+            position: relative;           
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: anime 15s infinite;
+        }
+        
+        @keyframes anime{
+            0%{
+                background-color: red;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Square */
+                left: 0px;
+                top: 0px;
+                width:100px;
+                height: 100px;
+            }
+            
+            45%{
+                    background-color: green;
+                left: 90%;
+                top: 0px;
+                clip-path: circle(50% at 50% 50%); /* Circle */
+                width: 100px;
+                height: 100px;
+            }
+            
+            85%{
+                    background-color: purple;
+                    top: 90%;
+                    left:600px;
+                    clip-path: clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                    width: 100px;
+                    height: 50px;
+                    
+            }
+            
+            100%{
+                    background-color: red;
+                    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 100%);
+                    top: 0px;
+                    left: 0px;
+                    width: 100px;
+                    height: 100px;
+                }
+    
+           
+        
+           
+    </style>
+</head>
+<body>
+        <h1>Clifford's Assignment</h1>
+     <div class="animated-forms"></div>   
+</body>
+</html>
